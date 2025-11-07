@@ -6,4 +6,4 @@
 
 17. The options are it shows which test failed then we can see the error and we can then click the opton source code to take us to the line to fix it.
 
-18. Yes the upvote
+18. Yes the upvote and down vote work correctly

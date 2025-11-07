@@ -46,7 +46,9 @@ public class SalesItemTest
         SalesItem salesIte1 = new SalesItem("d", 0) ;
         assertEquals(true, salesIte1.addComment("jake", "rara", 0));
     }
+
 }
+
 
 
 
