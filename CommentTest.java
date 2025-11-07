@@ -44,5 +44,32 @@ public class CommentTest
     public void addComment()
     {
     }
+
+    @Test
+    public void correctlyStoredTest()
+    {
+        Comment comment2 = new Comment("Ron", "hi", 4);
+        comment2.upvote();
+        comment2.upvote();
+        comment2.upvote();
+        comment2.downvote();
+    }
+
+    @Test
+    public void author()
+    {
+        Comment comment1 = new Comment("johnathan", "story", 2);
+        assertEquals("johnathan", comment1.getAuthor());
+    }
+
+    @Test
+    public void rating()
+    {
+        Comment comment2 = new Comment("Ron", "hi", 4);
+        assertEquals(4, comment2.getRating());
+    }
 }
+
+
+
 
