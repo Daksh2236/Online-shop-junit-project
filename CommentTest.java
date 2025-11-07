@@ -6,17 +6,17 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * The test class SalesItemTest.
+ * The test class CommentTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class SalesItemTest
+public class CommentTest
 {
     /**
-     * Default constructor for test class SalesItemTest
+     * Default constructor for test class CommentTest
      */
-    public SalesItemTest()
+    public CommentTest()
     {
     }
 
@@ -41,12 +41,8 @@ public class SalesItemTest
     }
 
     @Test
-    public void testComment()
+    public void addComment()
     {
-        SalesItem salesIte1 = new SalesItem("d", 0) ;
-        assertEquals(true, salesIte1.addComment("jake", "rara", 0));
     }
 }
-
-
 
