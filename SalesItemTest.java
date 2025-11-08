@@ -58,7 +58,23 @@ public class SalesItemTest
         salesIte1.upvoteComment(0);
         Comment comment1 = salesIte1.findMostHelpfulComment();
     }
+
+    @Test
+    public void findMostHelpfulCommentWithNoComment()
+    {
+        SalesItem salesIte1 = new SalesItem("bike", 50);
+    }
+
+    @Test
+    public void testUpVoteWithNoComments()
+    {
+        SalesItem salesIte1 = new SalesItem("bike", 50);
+        salesIte1.upvoteComment(0);
+        salesIte1.upvoteComment(1);
+    }
 }
+
+
 
 
 
