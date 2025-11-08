@@ -44,10 +44,22 @@ public class SalesItemTest
     public void testComment()
     {
         SalesItem salesIte1 = new SalesItem("d", 0) ;
-        assertEquals(true, salesIte1.addComment("jake", "rara", 0));
+        assertEquals(false, salesIte1.addComment("jake", "rara", 0));
     }
 
+
+    @Test
+    public void findMostHelpfulCommentTest()
+    {
+        SalesItem salesIte1 = new SalesItem("bike", 100);
+        salesIte1.addComment("Jake", "don't like the bike", 1);
+        salesIte1.addComment("Jeff", "love the bike", 5);
+        salesIte1.upvoteComment(0);
+        salesIte1.upvoteComment(0);
+        Comment comment1 = salesIte1.findMostHelpfulComment();
+    }
 }
+
 
 
 
